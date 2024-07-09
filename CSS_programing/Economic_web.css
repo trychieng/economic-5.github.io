@@ -75,6 +75,7 @@ header .logo {
     font-weight: bolder;
 }
 header .logo span {
+    
     color: var(--pink);
 }
 
@@ -153,6 +154,7 @@ section {
     }
     .home.content h3 {
         font-size: 5rem;
+       
     }
     .home.content span {
         font-size: 2.5rem;
@@ -303,17 +305,234 @@ section {
     overflow: hidden;
     text-align: center;
 }
+
+.discount{
+    color: #e84393;
+}
  /* define the size of image product */
 .box .image img {
     width: 100%;
     height: auto;
 }
+.box .image a { /* Corrected selector */
+    background: #e84393;
+    color: #fff;
+    border: #e84393 solid;
+    border-radius: 5px;
+    padding: 7px;
+
+}
  /* define content  */
 .box .content {
     padding: 10px;
+    font-size: 1.2rem;
 }
 
 .box .content .price {
     font-size: 1.2em;
     color: #333;
 }
+/* Header customer review */ 
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;  
+}
+/* Box */
+.review .box-container .box{
+    flex:1.1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem ;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.5rem solid rgba(0, 0, 0, .1);
+
+}
+
+.review .box-container .box .fas fa-quote-right{
+    position: absolute;
+    bottom:3rem;right:3rem ;
+    font-size: 6rem;
+    color: #eee;
+
+}
+
+.review .box-container .box .stars i{
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.review .box-container .box p{
+    color:#999;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-top:1.2rem ;
+}
+.review .box-container .box .user{
+    display: flex;
+    align-items: center ;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img{
+   height: 6rem;
+   width: 6rem;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-right: 1rem;
+
+}
+
+.review .box-container .box .user h3{
+    font-size: 2rem;
+    color: #333;
+
+}
+
+.review .box-container .box .user span{
+    font-size: 2rem;
+    color: #333;
+    
+}
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+/*prapare the form  */
+.contact .row form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 2rem;
+    width: 100%;
+
+  }
+  /* For box contact */
+  .contact .row form .box {
+    margin: 1rem 0;
+    width: 40rem; 
+    padding: 1rem; 
+    border: 1px solid rgb(228, 214, 214); 
+    font-size: 1.5rem;
+    border-radius:1.5rem;
+  }
+  
+  .contact .row form .box:nth-child(2) {
+    margin-top: 1.5rem;
+    height: 100px;
+  }
+  .contact .row .btn {
+    align-self: center;
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+  }
+  .contact.row.image{
+    flex: 1;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  /* Footer section */
+  /* border around all information */
+.footer {
+    background: #333;
+    padding: 5rem 9%;
+    color: #fff;
+    text-align: center;
+}
+/* Footer Box Container */
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+/* Individual Footer Boxes */
+.footer .box-container .box {
+    flex: 1 1 25rem;
+    background: #444;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+/* Footer Title */
+.footer .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+/* Footer Links */
+.footer .box-container .box a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    transition: color .3s;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--pink);
+}
+
+.footer .box-container .box img{
+    width: 100px;
+}
+/* Footer Credit Section */
+.footer .credit {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.footer .credit span {
+    color: var(--pink);
+}
+.create_account{
+    height: 59px;
+    width: 50px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.create_account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.create_account .btn, .create_account .login {
+    height: 59px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 5rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.create_account .btn {
+    color: aqua;
+    background-color: #333; /* Background color */
+    border: solid 2px #e84393; /* Border style */
+}
+
+.create_account .login {
+    background-color: #333;
+    color: aqua;
+    border: solid 2px #e84393;
+    margin-left: 590px;
+}
+.create_account .btn:hover, .create_account .login:hover {
+    background-color: var(--pink); /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+
+  
+

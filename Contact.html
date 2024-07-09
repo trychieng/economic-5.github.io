@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="CSS_programing/Contact.css">
+
+</head>
+<body>
+    <nav>
+        <div class="Flower">
+            <h1>Flower</h1>
+        </div>
+       <ul id="menuList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+       <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+       </div>
+       <div class="menu-icon">
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+       </div>
+    </nav>
+    <!-- strart Section Contact -->
+     <div class="contact-container">
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <div class="contact-detials">
+                <p><strong>Customer Service</strong><br>0978679338, 092397469</p>
+                <p><strong>Email</strong><br><a href="mailto:trychieng44@gmail.com">trychieng44@gmail.com</a></p>
+                <p><strong>Address</strong><br>Kilometer leak 6 khan Ruessy Keo phnom penh  </p>
+            </div>
+        </div>
+     </div>
+
+     <!-- Ends Section contact-->
+      
+
+    <script>
+        function toggleMenu() {
+            let menuList = document.getElementById("menuList");
+            menuList.classList.toggle("show");
+        }
+     </script>
+</body>
+</html>
